@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>TFF PDF Viewer</title>
+    <style>
+        body {
+            margin: 0;
+            background: #f4f6f9;
+            font-family: Arial, sans-serif;
+        }
+        #message {
+            margin: 40px;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            text-align: center;
+            font-size: 20px;
+            color: #333;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        #pdfFrame {
+            width: 100%;
+            height: 95vh;
+            border: none;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+<div id="message">
+    <b>TFF External PDF Viewer Ready</b><br><br>
+    PDF.js will load here when we pass file URLs from Salesforce LWC.<br>
+    (Step 3 will enable real PDF rendering.)
+</div>
+
+<iframe id="pdfFrame"></iframe>
+
+</body>
+</html>
